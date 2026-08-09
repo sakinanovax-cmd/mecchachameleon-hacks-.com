@@ -1,17 +1,13 @@
-# Cloudflare Pages redirects (also Netlify-compatible)
-# Force non-www → apex
-https://www.mecchahacks.com/*  https://mecchahacks.com/:splat  301
-http://www.mecchahacks.com/*   https://mecchahacks.com/:splat  301
-http://mecchahacks.com/*       https://mecchahacks.com/:splat  301
+# Cloudflare Workers/Pages static assets: ONLY relative URLs allowed.
+# www → non-www must be set in Cloudflare Dashboard → Rules → Redirect Rules.
 
-# Serve clean URLs (no .html in the address bar)
+# Clean URLs (serve .html without showing extension)
 /meccha-chameleon-cheats    /meccha-chameleon-cheats.html    200
 /blog                       /blog.html                       200
 /guide                      /guide.html                      200
 /resources                  /resources.html                  200
 /404                        /404.html                        200
 
-# Blog articles + keyword posts
 /blog-auto-chameleon-paint                      /blog-auto-chameleon-paint.html                      200
 /blog-cheat-comparison-2026                     /blog-cheat-comparison-2026.html                     200
 /blog-cloud-dma-aws                             /blog-cloud-dma-aws.html                             200
@@ -56,5 +52,3 @@ http://mecchahacks.com/*       https://mecchahacks.com/:splat  301
 /blog-meccha-chameleon-tips                     /blog-meccha-chameleon-tips.html                     200
 /blog-meccha-chameleon-vs-prop-hunt             /blog-meccha-chameleon-vs-prop-hunt.html             200
 /blog-meccha-chameleon-workshop-mods            /blog-meccha-chameleon-workshop-mods.html            200
-
-# Optional: if someone hits .html URLs, keep them working (no force strip needed)

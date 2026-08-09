@@ -16,3 +16,8 @@ venv/
 *.log
 .tmp/
 .cache/
+
+# Wrangler / Cloudflare local
+.wrangler/
+node_modules/
+.dev.vars
