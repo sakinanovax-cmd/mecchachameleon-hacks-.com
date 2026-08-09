@@ -1,0 +1,18 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+.vscode/
+.idea/
+
+# Python junk from local scripts
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local logs / temp
+*.log
+.tmp/
+.cache/

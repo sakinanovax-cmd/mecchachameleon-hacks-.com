@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO Launch Checklist — Meccha Chameleon Cheats</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+  <main class="container article-wrap prose">
+    <h1>SEO Launch Checklist (do after deploy)</h1>
+    <p>This page is <strong>noindex</strong>.</p>
+    <h2>1. Deploy</h2>
+    <ol>
+      <li>Upload the full site folder</li>
+      <li>Point <code>mecchahacks.com</code> DNS to the host</li>
+      <li>Confirm HTTPS + clean URLs</li>
+    </ol>
+    <h2>2. Google Search Console + Analytics (one file)</h2>
+    <ol>
+      <li>Open <code>js/site-config.js</code></li>
+      <li>Set <code>gscVerification</code> to your Search Console HTML-tag content value</li>
+      <li>Set <code>ga4Id</code> to your GA4 ID like <code>G-XXXXXXXXXX</code></li>
+      <li>Deploy that file</li>
+      <li>Submit sitemap: <a href="/sitemap.xml">https://mecchahacks.com/sitemap.xml</a></li>
+      <li>Request indexing for Home, Buy, Guide, Resources, and top posts</li>
+    </ol>
+    <h2>3. Domain authority (off-site)</h2>
+    <p>Follow <a href="backlink-playbook.html">backlink-playbook.html</a> weekly. Share <a href="resources.html">/resources</a> as the citation URL.</p>
+    <h2>4. QA</h2>
+    <ul>
+      <li><a href="qa-checklist.html">Feature consistency checklist</a></li>
+      <li>Buy buttons fire <code>purchase_click</code> in dataLayer when GA is live</li>
+    </ul>
+    <p><a class="btn btn-primary" href="/">Back to Home</a></p>
+  </main>
+</body>
+</html>

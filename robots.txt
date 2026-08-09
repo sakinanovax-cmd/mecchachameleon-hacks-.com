@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Disallow: /scripts/
+Disallow: /seo-setup.html
+Disallow: /qa-checklist.html
+Disallow: /backlink-playbook.html
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+Sitemap: https://mecchahacks.com/sitemap.xml
+Host: mecchahacks.com
